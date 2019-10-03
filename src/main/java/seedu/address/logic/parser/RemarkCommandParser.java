@@ -1,0 +1,33 @@
+package seedu.address.logic.parser;
+
+import seedu.address.commons.core.index.Index;
+import seedu.address.commons.exceptions.IllegalValueException;
+import seedu.address.logic.commands.RemarkCommand;
+import seedu.address.logic.parser.exceptions.ParseException;
+import seedu.address.model.person.Remark;
+
+import static seedu.address.logic.parser.CliSyntax.PREFIX_REMARK;
+import static java.util.Objects.requireNonNull;
+
+public class RemarkCommandParser {
+    private static final String MESSAGE_INVALID_COMMAND_FORMAT = "MESSAGE FORMAT IS INVALID";
+    public static final String MESSAGE_ADD_REMARK_SUCCESS = "Added remark to Person: %1$s";
+    public static final String MESSAGE_DELETE_REMARK_SUCCESS = "Removed remark from Person: %1$s";
+    public RemarkCommand parse(String args) throws ParseException {
+        requireNonNull(args);
+        ArgumentMultimap argMultimap = ArgumentTokenizer.tokenize(args,
+                PREFIX_REMARK);
+
+        Index index;
+        try {
+            index = ParserUtil.parseIndex(argMultimap.getPreamble());
+        } catch (IllegalValueException ive) {
+            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT,
+                    RemarkCommand.MESSAGE_USAGE), ive);
+        }
+
+        String remark = argMultimap.getValue(PREFIX_REMARK).orElse("");
+
+        return new RemarkCommand(index, new Remark(remark));
+    }
+}
