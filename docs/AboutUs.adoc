@@ -5,53 +5,51 @@
 :stylesDir: stylesheets
 
 SecureIT was developed by the https://github.com/orgs/AY1920S1-CS2103T-F11-3/teams[F11-3] team. +
-_{The dummy content given below serves as a placeholder to be used by future forks of the project.}_ +
-{empty} +
 We are a team based in the http://www.comp.nus.edu.sg[School of Computing, National University of Singapore].
 
 == Project Team
 
 === Ni Tian Zhen
 image::niqiukun.jpg[width="150", align="left"]
-{empty}[http://www.comp.nus.edu.sg/niqiukun[github]] [https://github.com/damithc[github]] [<<niqiukun#, portfolio>>]
+{empty}[http://github.com/niqiukun[github]]
 
-Role: Developer +
+Role: Developer / Code Quality +
 Responsibilities: File encryption
 
 '''
 
 === Hoon Chee Ping
 image::hooncp.jpg[width="150", align="left"]
-{empty}[http://github.com/hooncp[github]] [<<hooncp#, portfolio>>]
+{empty}[http://github.com/hooncp[github]]
 
-Role: Developer +
+Role: Developer / Testing +
 Responsibilities: Password encryption
 
 '''
 
 === Lee Ee Jian
 image::eejian97.jpg[width="150", align="left"]
-{empty}[http://github.com/eejian97[github]] [<<eejian97#, portfolio>>]
+{empty}[http://github.com/eejian97[github]]
 
-Role: Developer +
+Role: Developer / UI +
 Responsibilities: Password generation and Analysis
 
 '''
 
 === Yang Hui Ting
 image::yhtingg.jpg[width="150", align="left"]
-{empty}[http://github.com/yhtingg[github]] [<<yhtingg#, portfolio>>]
+{empty}[http://github.com/yhtingg[github]]
 
-Role: Developer +
+Role: Developer / Analysis  +
 Responsibilities: Credit card details encryption
 
 '''
 
 === Leow Jit Yong
 image::jityong.jpg[width="150", align="left"]
-{empty}[http://github.com/jityong[github]] [<<jityong#, portfolio>>]
+{empty}[http://github.com/jityong[github]]
 
-Role: Developer +
+Role: Developer / Design +
 Responsibilities: Notes encryption
 
 '''
