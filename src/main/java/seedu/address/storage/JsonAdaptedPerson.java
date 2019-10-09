@@ -90,7 +90,7 @@ class JsonAdaptedPerson {
         }
         final Email modelEmail = new Email(email);
         final Set<Tag> modelTags = new HashSet<>(personTags);
-        return new Person(modelName, modelPhone, modelEmail,modelTags);
+        return new Person(modelName, modelPhone, modelEmail, modelTags);
     }
 
 }
