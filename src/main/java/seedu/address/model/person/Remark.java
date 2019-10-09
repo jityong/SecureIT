@@ -1,12 +1,14 @@
 package seedu.address.model.person;
 
 import static java.util.Objects.requireNonNull;
-import static seedu.address.commons.util.AppUtil.checkArgument;
 
+/**
+ * Represents a Remark class in the address book.
+ */
 public class Remark {
     public static final String MESSAGE_CONSTRAINTS = "Remarks can take any values, and it should not be blank";
 
-    /*
+    /**
      * The first character of the address must not be a whitespace,
      * otherwise " " (a blank string) becomes a valid input.
      */
